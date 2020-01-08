@@ -10,11 +10,7 @@ You should now play around with the Git commands yourself by using this testing 
 
 
 ### Getting Started
-You can start by pulling down this repo to your local machine. Navigate to the desired directory within your Linux machine or Ubuntu subsystem (make sure it hasn't been initialized with a repo previously) and run the command "git pull origin master". What did the CLI print to the screen after you executed this command?
-* If the terminal output something similar to "fatal: could not read from remote repository" then you got the correct output!
-  * If you run the command "ls" within your directory, do you see any of the files from the repo in your directory? The answer should be no if you got the earlier output!
-  * This is because you have not INITIALIZED the repo, so Git has no idea what master branch you're referring to when you try to pull the data down!
-* Try this command after following the next section and observe how the output changes.
+You can start by cloning the repo and placing that repo onto your local machine. In order to clone a repository, you need to find the repository on GitHub and copy the link (look for a green button) to the project to your clipboard. From there, navigate to the desired directory within your Linux machine or Ubuntu subsystem using the cd command (but make sure the repo hasn't been initialized previously) and run the command "git clone paste-from-clipboard-here". 
 
 ### Initializing
 You have two common ways of initializing your repo; you can run the command "git init" which will create an empty repo in the directory you're in (and then you should proceed to push it to your Github account so it becomes public) or you can clone from an existing repo (which is the more common way).
@@ -25,9 +21,9 @@ You have two common ways of initializing your repo; you can run the command "git
 * For now, if you don't have your ssh key setup yet, you can copy the https link and run the command "git clone" followed by the link you copied within your desired local directory; you should then see the files that were in this repo now on your local machine!
   
 ### Pulling
-Pulling is done with the "git pull" command, and it is done to pull and merge new changes from the repo you are now tethered to (note: you can run "git fetch" as well to pull the new changes down WITHOUT automatically merging them).
-* If you run "git pull origin master", this would pull down (and merge) any new changes from the master branch. If you try this command right now, you will receive a message in the terminal similar to "your branch is up to date with 'origin/master'".
-* It is generally safe to run "git pull" regardless of the automatic merging; if there is a merge conflict, you will be notified and will have to manually resolve them within your code editor to integrate the new changes in.
+Pulling is done with the "git pull" command, and it is done to pull and merge new changes from the repo you are now tethered to (note: you can run "git fetch" as well to pull the new changes down WITHOUT automatically merging them). The appropriate time to pull changes is generally when a) just before you begin your work for the day, since someone else might have made changes since you clocked out the day before, and b) after you commit but before you push changes to the remote repo.
+* If you run "git pull origin master", this would pull down (fetch and merge) any new changes from the master branch. If you try this command right now, you will receive a message in the terminal similar to "your branch is up to date with 'origin/master'".
+* Note that it is generally safe to run "git pull" regardless of the automatic merging; if there is a merge conflict, you will be notified and will have to manually resolve them within your code editor to integrate the new changes in.
 
 ### Branches
 So far, you have only been working with the "master" branch: this is the main branch for the repo, where all changes are eventually merged into. We create other branches so we can make changes to the code and integrate them into this master branch.
