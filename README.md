@@ -35,6 +35,13 @@ So far, you have only been working with the "master" branch: this is the main br
 * You can check what branch you are on alongside any changes that need to be stashed/committed with the command "git status".
 * As a general rule of thumb, it is easier to make the Github branch and local branch names the same to avoid any little problems/errors that may arise when pushing/pulling to/from branches.
 
+### WARNINGS
+DO NOT PUSH TO THE MASTER BRANCH!
+* Always ensure which branch you are on with "git status" and make sure you are not pushing to the master branch.
+* Github is good for uploading new files and changes to existing files; it is NOT easy to delete files and clean up the branches!
+##### IF YOU PUSH TO THE MASTER BRANCH, YOU WILL CAUSE A LARGE MESS THAT WILL BE INCREDIBLY DIFFICULT TO FIX AND YOUR COWORKERS WILL ALWAYS REMEMBER IT!!!
+##### FURTHERMORE, IF YOU PUSH WITH THE "-f" OR "--force" PARAMETERS, YOU COULD OVERWRITE ALL EXISTING CHANGES AND POTENTIALLY BE FIRED!!!
+
 ### Pushing
 Pushing is done with the "git push" command, and it is done to push all your work to the branch you are on.
 * The general workflow for pushing your work will be as follows:
@@ -42,8 +49,6 @@ Pushing is done with the "git push" command, and it is done to push all your wor
   2. Run "git add ." to add all changed files to what you plan to commit.
   3. Run "git commit -m" followed by a one sentence textual reason (in quotation marks) as to what changes you made.
   4. Run "git push origin" followed by the name of the current branch you are on and plan to push to.
-* PLEASE SEE THE IMPORTANT MESSAGE AT THE BOTTOM BEFORE TRYING TO PUSH ANYTHING!!!
-
 ### Wrap Up
 You may download this repo and make any changes you want to the existing files; you may even add more if you want! Use this test repo to play around with some of the other commands that you took notes on from the Git-scm book and get a good feel for how to use this powerful tool. As a reminder, the normal workflow of using Git each day will usually be:
   1. Navigate to the desired directory.
@@ -54,12 +59,3 @@ You may download this repo and make any changes you want to the existing files; 
   6. Run "git add ." to add all files to what you're about to push.
   7. Run "git commit -m" followed by a one sentence textual reason (in quotation marks) as to what changes you made.
   8. Run "git push origin" followed by the name of the current branch you are on and plan to push to.
-
-
-
-## IMPORTANT - PLEASE READ THIS!!!!
-##### DO NOT PUSH TO THE MASTER BRANCH!!!!!!
-* Always ensure which branch you are on with "git status" and make sure you are not pushing to the master branch.
-* Github is good for uploading new files and changes to existing files; it is NOT easy to delete files and clean up the branches!
-##### IF YOU PUSH TO THE MASTER BRANCH, YOU WILL CAUSE A LARGE MESS THAT WILL BE INCREDIBLY DIFFICULT TO FIX AND YOUR COWORKERS WILL ALWAYS REMEMBER IT!!!
-##### FURTHERMORE, IF YOU PUSH WITH THE "-f" OR "--force" PARAMETERS, YOU COULD OVERWRITE ALL EXISTING CHANGES AND POTENTIALLY BE FIRED!!!
