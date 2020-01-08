@@ -8,6 +8,7 @@ At this point in your training, you should have...
 You should now play around with the Git commands yourself by using this testing repo.
 
 
+
 ### Getting Started
 You can start by pulling down this repo to your local machine. Navigate to the desired directory within your Linux machine or Ubuntu subsystem (make sure it hasn't been initialized with a repo previously) and run the command "git pull origin master". What did the CLI print to the screen after you executed this command?
 * If the terminal output something similar to "fatal: could not read from remote repository" then you got the correct output!
@@ -57,6 +58,7 @@ You may download this repo and make any changes you want to the existing files; 
   6. Run "git add ." to add all files to what you're about to push.
   7. Run "git commit -m" followed by a one sentence textual reason (in quotation marks) as to what changes you made.
   8. Run "git push origin" followed by the name of the current branch you are on and plan to push to.
+
 
 
 ## IMPORTANT - PLEASE READ THIS!!!!
